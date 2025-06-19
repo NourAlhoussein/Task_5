@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 interface NavbarProps {
   isNavbarOpen: boolean;
 }
-function Navbar({ isNavbarOpen }) {
+function Navbar({ isNavbarOpen }: NavbarProps) {
   const navigate = useNavigate();
   const logout = () => {
     localStorage.removeItem("token");
