@@ -239,6 +239,7 @@
   justify-content: center;
   align-items: center;
   gap: 16px;
+  overflow: scroll;
 }
 .pag-disable {
   display: flex !important;
@@ -573,6 +574,9 @@ a {
   }
   .search-dash {
     width: 280px;
+  }
+  .gap-100px {
+    gap: 14px;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
