@@ -239,7 +239,6 @@
   justify-content: center;
   align-items: center;
   gap: 16px;
-  overflow: scroll;
 }
 .pag-disable {
   display: flex !important;
@@ -577,6 +576,9 @@ a {
   }
   .gap-100px {
     gap: 14px;
+  }
+  .pagination {
+    overflow: scroll;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {

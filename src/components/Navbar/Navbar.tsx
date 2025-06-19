@@ -1,3 +1,4 @@
+import axios from "axios";
 import { Image } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 interface NavbarProps {
@@ -6,9 +7,23 @@ interface NavbarProps {
 function Navbar({ isNavbarOpen }: NavbarProps) {
   const navigate = useNavigate();
   const logout = () => {
-    localStorage.removeItem("token");
-    navigate("/");
-    console.log("logout success");
+    axios
+      .post(
+        "https://web-production-3ca4c.up.railway.app/api/logout",
+        {},
+        {
+          headers: {
+            Accept: "application/json",
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+        }
+      )
+      .then(() => {
+        localStorage.removeItem("token");
+        navigate("/");
+        console.log("logout success");
+      })
+      .catch((err) => console.log(err));
   };
   return (
     <div
