@@ -12,7 +12,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Signup from "./pages/Signup";
 
 const routers = createBrowserRouter([
-  { path: "/Task_5", element: <Login /> },
+  { path: "/", element: <Login /> },
   { path: "/signup", element: <Signup /> },
   {
     path: "/dashboard",
@@ -36,7 +36,7 @@ const routers = createBrowserRouter([
       },
     ],
   },
-]);
+],{basename:"/Task_5"});
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <RouterProvider router={routers} />
