@@ -12,7 +12,7 @@ function Dashboard() {
     <div className="montserrat gray-back">
       <Navbar isNavbarOpen={isNavbarOpen} />
       <div className="small-nav">
-        <Image className="nav-logo" src="/images/logo.png" />
+        <Image className="nav-logo" src="/Task_5/images/logo.png" />
         <IoMenu className="fs-4" onClick={openSmallNav} />
       </div>
       <Outlet />

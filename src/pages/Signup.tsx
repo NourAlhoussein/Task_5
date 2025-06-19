@@ -63,7 +63,7 @@ function Signup() {
       className="background-gradient min-h-100vh  d-flex justify-content-center align-items-center montserrat py-40"
     >
       <div className="signup-card-style d-flex justify-content-center align-items-center">
-        <Image fluid src="/images/logo.png" />
+        <Image fluid src="/Task_5/images/logo.png" />
         <div className="mt-30 fw-600 fs-22px">SIGN UP</div>
         <div className="gray-color fs-14px fw-400 mt-9 text-center">
           Fill in the following fields to create an account.
@@ -141,7 +141,7 @@ function Signup() {
                     }} // Adjust size as needed
                   />
                 ) : (
-                  <Image fluid src="/images/Upload icon.png" />
+                  <Image fluid src="/Task_5/images/Upload icon.png" />
                 )}
               </div>
             </Form.Label>

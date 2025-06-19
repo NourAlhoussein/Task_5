@@ -118,7 +118,7 @@ function AddNewItem() {
                       }}
                     />
                   ) : (
-                    <Image fluid src="/images/Upload icon larg.png" />
+                    <Image fluid src="/Task_5/images/Upload icon larg.png" />
                   )}
                 </div>
               </Form.Label>

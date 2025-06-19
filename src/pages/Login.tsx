@@ -41,7 +41,7 @@ function login() {
       className="background-gradient min-h-100vh  d-flex justify-content-center align-items-center montserrat"
     >
       <div className="login-card-style d-flex justify-content-center align-items-center py-40 my-60px my-95px">
-        <Image fluid src="/images/logo.png" />
+        <Image fluid src="/Task_5/images/logo.png" />
         <div className="mt-30 fw-600 fs-22px">SIGN IN</div>
         <div className="gray-color fs-14px fw-400 mt-9 text-center">
           Enter your credentials to access your account

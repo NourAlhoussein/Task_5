@@ -22,7 +22,7 @@ function Items() {
   const [showDelete, setShowDelete] = useState<Boolean>(false);
   const [itemDeleted, setItemDeleted] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(true);
-  const default_image = "/images/default photo.png";
+  const default_image = "/Task_5/images/default photo.png";
 
   useEffect(() => {
     getItems();
